@@ -14,7 +14,11 @@ const Hero = () => {
     return (
         <div className={css.hero}>
             <div className={css.canvasContainer}>
-                <Canvas camera={{ position: [0, 0, 6], fov: 45 }}>
+                <Canvas
+                    camera={{ position: [0, 0, 6], fov: 45 }}
+                    dpr={[1, 2]} // Optimize for high DPI screens
+                    gl={{ antialias: true, powerPreference: "high-performance" }}
+                >
                     <Suspense fallback={null}>
                         <HeroScene />
                     </Suspense>
@@ -68,6 +72,7 @@ const Hero = () => {
                         src={heroImage}
                         alt="Abdelrahman Alfarmawy"
                         className={css.coachImage}
+                        fetchpriority="high" // Prioritize LCP image
                     />
                 </motion.div>
             </div>

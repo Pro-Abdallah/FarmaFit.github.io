@@ -59,7 +59,7 @@ const About = ({ onOpenStory }) => {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            whileHover={{ y: -10, borderColor: '#FF1E1E' }}
+                            whileHover={{ borderColor: '#FF1E1E' }}
                         >
                             <h3 className={css.statValue}>{stat.value}</h3>
                             <p className={css.statLabel}>{stat.label}</p>

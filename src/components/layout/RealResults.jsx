@@ -24,7 +24,7 @@ const RealResults = () => {
                         <div className={css.imageContainer}>
                             <div className={css.beforeLabel}>Before</div>
                             <div className={css.afterLabel}>After</div>
-                            <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1287&auto=format&fit=crop" alt="Before" className={css.img} />
+                            <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1287&auto=format&fit=crop" alt="Before" className={css.img} loading="lazy" />
                             <div className={css.swipeOverlay}></div>
                         </div>
                         <h3>James T.</h3>
@@ -34,7 +34,7 @@ const RealResults = () => {
                         <div className={css.imageContainer}>
                             <div className={css.beforeLabel}>Before</div>
                             <div className={css.afterLabel}>After</div>
-                            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1469&auto=format&fit=crop" alt="Before" className={css.img} />
+                            <img src="https://images.unsplash.com/photo-1574680096145-d05b474e2155?q=80&w=1469&auto=format&fit=crop" alt="Before" className={css.img} loading="lazy" />
                             <div className={css.swipeOverlay}></div>
                         </div>
                         <h3>Sarah L.</h3>
